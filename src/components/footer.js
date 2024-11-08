@@ -3,7 +3,7 @@ import { client } from "@/sanity/client";
 import Image from "next/image";
 import Link from "next/link";
 
-const options = { next: { revalidate: 30 } };
+const options = { next: { revalidate: 60 } };
 const QUERY = defineQuery(`*[_type == "footer"][0]`);
 
 export default async function Footer() {

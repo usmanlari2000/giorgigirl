@@ -2,7 +2,7 @@ import { defineQuery } from "next-sanity";
 import { client } from "@/sanity/client";
 import { butlerMedium } from "@/app/fonts";
 
-const options = { next: { revalidate: 30 } };
+const options = { next: { revalidate: 60 } };
 const QUERY = defineQuery(`*[_type == "callToAction"][0]`);
 
 export default async function CallToAction() {
