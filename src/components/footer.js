@@ -1,5 +1,5 @@
 import { defineQuery } from "next-sanity";
-import { client } from "@/sanity/client";
+import { client } from "../sanity/client";
 import Image from "next/image";
 import Link from "next/link";
 

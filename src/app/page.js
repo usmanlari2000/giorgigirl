@@ -1,5 +1,5 @@
 import { defineQuery } from "next-sanity";
-import { client } from "@/sanity/client";
+import { client } from "../sanity/client";
 import urlFor from "@/sanity/image";
 import ImageCarousel from "@/components/imageCarousel";
 import Slogan from "@/components/slogan";
