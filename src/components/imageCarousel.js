@@ -19,7 +19,7 @@ export default function ImageCarousel({ imageCarousel }) {
     const startInterval = () => {
       if (!isDisabled && offsetX < repeatedImages.length / 2 - 1) {
         intervalId = setInterval(() => {
-          setOffsetX(offsetX + 1);
+          setOffsetX((prevOffsetX) => prevOffsetX + 1);
           setIsDisabled(true);
 
           setTimeout(() => {
@@ -45,11 +45,11 @@ export default function ImageCarousel({ imageCarousel }) {
       clearInterval(intervalId);
       document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
-  }, [isDisabled, offsetX]);
+  }, [isDisabled, offsetX, repeatedImages.length]);
 
   const handlePrev = () => {
     if (isDisabled || offsetX <= -(repeatedImages.length / 2)) return;
-    setOffsetX(offsetX - 1);
+    setOffsetX((prevOffsetX) => prevOffsetX - 1);
     setIsDisabled(true);
 
     setTimeout(() => {
@@ -59,7 +59,7 @@ export default function ImageCarousel({ imageCarousel }) {
 
   const handleNext = () => {
     if (isDisabled || offsetX >= repeatedImages.length / 2 - 1) return;
-    setOffsetX(offsetX + 1);
+    setOffsetX((prevOffsetX) => prevOffsetX + 1);
     setIsDisabled(true);
 
     setTimeout(() => {

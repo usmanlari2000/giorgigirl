@@ -1,5 +1,5 @@
 import { defineQuery } from "next-sanity";
-import { client } from "../sanity/client";
+import { client } from "@/sanity/client";
 import HeaderChild from "./headerChild";
 
 const options = { next: { revalidate: 60 } };

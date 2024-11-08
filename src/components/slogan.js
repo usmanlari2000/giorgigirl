@@ -5,7 +5,7 @@ export default function Slogan({ slogan }) {
   const array = slogan.match(regex) || [];
 
   return (
-    <h1 className="flex justify-center items-center gap-4 flex-wrap max-w-screen-md lg:max-w-screen-xl mx-auto px-5 py-16">
+    <h1 className="flex justify-center items-center gap-4 flex-wrap max-w-screen-md lg:max-w-screen-xl mx-auto px-5 py-14">
       {array.map((item, index) =>
         item[0] == "`" && item[item.length - 1] == "`" ? (
           <span

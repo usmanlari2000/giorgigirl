@@ -20,7 +20,7 @@ export default function TestimonialCarouselChild({ testimonialCarousel }) {
     const startInterval = () => {
       if (!isDisabled && offsetX < repeatedTestimonials.length / 2 - 1) {
         intervalId = setInterval(() => {
-          setOffsetX(offsetX + 1);
+          setOffsetX((prevOffsetX) => prevOffsetX + 1);
           setIsDisabled(true);
 
           setTimeout(() => {
@@ -46,11 +46,11 @@ export default function TestimonialCarouselChild({ testimonialCarousel }) {
       clearInterval(intervalId);
       document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
-  }, [isDisabled, offsetX]);
+  }, [isDisabled, offsetX, repeatedTestimonials.length]);
 
   const handlePrev = () => {
     if (isDisabled || offsetX <= -(repeatedTestimonials.length / 2)) return;
-    setOffsetX(offsetX - 1);
+    setOffsetX((prevOffsetX) => prevOffsetX - 1);
     setIsDisabled(true);
 
     setTimeout(() => {
@@ -60,7 +60,7 @@ export default function TestimonialCarouselChild({ testimonialCarousel }) {
 
   const handleNext = () => {
     if (isDisabled || offsetX >= repeatedTestimonials.length / 2 - 1) return;
-    setOffsetX(offsetX + 1);
+    setOffsetX((prevOffsetX) => prevOffsetX + 1);
     setIsDisabled(true);
 
     setTimeout(() => {
@@ -90,9 +90,7 @@ export default function TestimonialCarouselChild({ testimonialCarousel }) {
                 key={index}
                 className="w-full absolute top-0 transition-all duration-[1500ms]"
                 style={{
-                  left: `${
-                    (index - offsetX - repeatedTestimonials.length / 2) * 100
-                  }%`,
+                  left: `${(index - offsetX - repeatedTestimonials.length / 2) * 100}%`,
                 }}
               >
                 <p
@@ -115,7 +113,7 @@ export default function TestimonialCarouselChild({ testimonialCarousel }) {
           >
             <Image
               src="/Testimonial-Slider-Left-Arrow.webp"
-              alt=""
+              alt="Previous testimonial"
               width={18}
               height={35}
             />
@@ -127,7 +125,7 @@ export default function TestimonialCarouselChild({ testimonialCarousel }) {
           >
             <Image
               src="/Testimonial-Slider-Right-Arrow.webp"
-              alt=""
+              alt="Next testimonial"
               width={17}
               height={35}
             />

@@ -16,7 +16,7 @@ export default function HeaderChild({ header }) {
               className="h-[72px] w-auto"
               src="/GG-Logo-Horizontal.webp"
               alt=""
-              width={350}
+              width={350} 
               height={397}
             />
           </Link>
