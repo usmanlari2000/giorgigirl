@@ -16,7 +16,7 @@ export default function LearnMore({ learnMore }) {
             />
           </div>
           <div className="h-full w-full bg-black opacity-0 group-hover:opacity-60 transition-all duration-500 absolute top-0 left-0"></div>
-          <div className="h-[95%] group-hover:h-[85%] w-[95%] group-hover:w-[85%] transition-all duration-500 border border-white transform -translate-x-1/2 -translate-y-1/2 absolute top-2/4 left-2/4"></div>
+          <div className="h-[95%] group-hover:h-3/4 sm:group-hover:h-[85%] w-[95%] group-hover:w-3/4 sm:group-hover:w-[85%] transition-all duration-500 border border-white transform -translate-x-1/2 -translate-y-1/2 absolute top-2/4 left-2/4"></div>
           <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 transform -translate-x-1/2 -translate-y-1/2 absolute top-2/4 left-2/4 text-white text-lg uppercase">
             {learnMore[0].hoverText}
           </div>
