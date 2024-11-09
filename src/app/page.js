@@ -10,7 +10,7 @@ import BeforeAndAfterImages from "@/components/beforeAndAfterImages";
 import TestimonialCarousel from "@/components/testimonialCarousel";
 import CallToAction from "@/components/callToAction";
 
-const options = { next: { cache: "no-store" } };
+const options = { next: { revalidate: 0 } };
 const QUERY = defineQuery(`*[_type == "home"][0]`);
 
 export async function generateMetadata() {

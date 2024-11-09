@@ -3,7 +3,7 @@ import { client } from "../../sanity/client";
 import urlFor from "@/sanity/image";
 import CallToAction from "@/components/callToAction";
 
-const options = { next: { cache: "no-store" } };
+const options = { next: { revalidate: 0 } };
 const QUERY = defineQuery(`*[_type == "portfolio"][0]`);
 
 export async function generateMetadata() {

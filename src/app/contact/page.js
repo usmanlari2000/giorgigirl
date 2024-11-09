@@ -2,7 +2,7 @@ import { defineQuery } from "next-sanity";
 import { client } from "../../sanity/client";
 import urlFor from "@/sanity/image";
 
-const options = { next: { cache: "no-store" } };
+const options = { next: { revalidate: 0 } };
 const QUERY = defineQuery(`*[_type == "contact"][0]`);
 
 export async function generateMetadata() {
