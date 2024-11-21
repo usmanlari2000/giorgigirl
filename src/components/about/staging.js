@@ -69,7 +69,6 @@ export default function Staging({ staging }) {
                     alt=""
                     fill={true}
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    loading={index == 0 ? "eager" : "lazy"}
                   />
                 </div>
                 <div className="h-[95%] w-[95%] border border-white transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2"></div>

@@ -73,26 +73,14 @@ export default function ImageCarousel({ imageCarousel }) {
         disabled={isDisabled}
         className="w-11 h-11 cursor-pointer transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-11"
       >
-        <Image
-          src="/Slider-Left-Arrow.png"
-          alt=""
-          width={92}
-          height={92}
-          loading="eager"
-        />
+        <Image src="/Slider-Left-Arrow.png" alt="" width={92} height={92} />
       </button>
       <button
         onClick={handleNext}
         disabled={isDisabled}
         className="w-11 h-11 cursor-pointer transform translate-x-1/2 -translate-y-1/2 absolute top-1/2 right-11"
       >
-        <Image
-          src="/Slider-Right-Arrow.png"
-          alt=""
-          width={92}
-          height={92}
-          loading="eager"
-        />
+        <Image src="/Slider-Right-Arrow.png" alt="" width={92} height={92} />
       </button>
     </div>
   );
