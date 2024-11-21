@@ -37,6 +37,7 @@ export default function Page() {
               priority
               fill={true}
               sizes="100vw"
+              loading="eager"
               className="w-full h-full object-cover"
             />
           </div>
