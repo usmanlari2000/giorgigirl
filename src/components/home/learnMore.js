@@ -13,7 +13,6 @@ export default function LearnMore({ learnMore }) {
               alt=""
               fill={true}
               sizes="100vw"
-              loading="eager"
               className="w-full h-full object-cover"
             />
           </div>
@@ -36,7 +35,6 @@ export default function LearnMore({ learnMore }) {
                 alt=""
                 fill={true}
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                loading="eager"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -58,7 +56,6 @@ export default function LearnMore({ learnMore }) {
                 alt=""
                 fill={true}
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                loading="eager"
                 className="w-full h-full object-cover"
               />
             </div>
