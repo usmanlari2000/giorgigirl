@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header className={pathname != "/" ? "bg-[#f5f5f5]" : ""}>
-      <div className="flex flex-col sm:flex-row justify-between items-center gap-y-2 max-w-screen-xl mx-auto px-5 py-2">
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-y-2 max-w-screen-xl mx-auto px-4 py-2">
         <div className="flex items-center gap-x-10">
           <Link href="/">
             <Image
@@ -23,6 +23,7 @@ export default function Header() {
               alt=""
               width={350}
               height={397}
+              loading="eager"
               className="h-[72px] w-auto"
             />
           </Link>
