@@ -22,6 +22,7 @@ export default function Footer() {
                 alt=""
                 width={2338}
                 height={832}
+                loading="lazy"
                 className="w-60 h-auto"
               />
             </Link>

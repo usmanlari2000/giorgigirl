@@ -11,12 +11,12 @@ export default function CompanyInfo({ companyInfo }) {
       <div className="group max-w-[496px] lg:max-w-none w-full lg:w-1/2 xl:w-3/5 relative">
         <div className="h-80 lg:h-[496px] w-full relative">
           <Image
-            className="w-full h-full object-cover"
             src={urlFor(companyInfo.image).url()}
             alt=""
-            priority
             fill={true}
             sizes="100vw"
+            loading="eager"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="h-[95%] w-[95%] border border-white transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2"></div>

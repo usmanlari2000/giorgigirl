@@ -34,9 +34,9 @@ export default function Page() {
             <Image
               src={urlFor(contact.coverImage).url()}
               alt=""
-              priority
               fill={true}
               sizes="100vw"
+              loading="eager"
               className="w-full h-full object-cover"
             />
           </div>

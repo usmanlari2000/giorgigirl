@@ -43,6 +43,7 @@ export default function ImageCarousel({ imageCarousel }) {
           fill={true}
           sizes="100vw"
           priority={index == images.length / 2}
+          loading={index == images.length / 2 ? "eager" : "lazy"}
           style={{
             left: `${(index - displacement - images.length / 2) * 100}%`,
           }}
@@ -73,14 +74,26 @@ export default function ImageCarousel({ imageCarousel }) {
         disabled={isDisabled}
         className="w-11 h-11 cursor-pointer transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-11"
       >
-        <Image src="/Slider-Left-Arrow.png" alt="" width={92} height={92} />
+        <Image
+          src="/Slider-Left-Arrow.png"
+          alt=""
+          width={92}
+          height={92}
+          loading="eager"
+        />
       </button>
       <button
         onClick={handleNext}
         disabled={isDisabled}
         className="w-11 h-11 cursor-pointer transform translate-x-1/2 -translate-y-1/2 absolute top-1/2 right-11"
       >
-        <Image src="/Slider-Right-Arrow.png" alt="" width={92} height={92} />
+        <Image
+          src="/Slider-Right-Arrow.png"
+          alt=""
+          width={92}
+          height={92}
+          loading="eager"
+        />
       </button>
     </div>
   );

@@ -119,8 +119,8 @@ export default function BeforeAndAfterImages({ beforeAndAfterImages }) {
             src={urlFor(beforeAndAfterImages.backgroundImage).url()}
             alt=""
             fill={true}
-            priority
             sizes="(max-width: 1024px) 100vw, 50vw"
+            loading="eager"
             className="w-full h-full object-cover"
           />
           <div className="w-full h-full bg-white opacity-80 absolute top-0 left-0"></div>
@@ -191,6 +191,7 @@ export default function BeforeAndAfterImages({ beforeAndAfterImages }) {
                     alt=""
                     width={112}
                     height={112}
+                    loading="eager"
                     className="w-full h-full"
                   />
                   <div className="w-full h-full absolute top-0 left-0"></div>
@@ -207,6 +208,7 @@ export default function BeforeAndAfterImages({ beforeAndAfterImages }) {
             alt=""
             width={76}
             height={19}
+            loading="eager"
             className="w-auto h-5"
           />
         </button>
@@ -217,6 +219,7 @@ export default function BeforeAndAfterImages({ beforeAndAfterImages }) {
             alt=""
             width={74}
             height={19}
+            loading="eager"
             className="w-auto h-5"
           />
         </button>

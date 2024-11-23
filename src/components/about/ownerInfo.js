@@ -36,12 +36,12 @@ export default function OwnerInfo({ ownerInfo }) {
         <div className="group max-w-80 sm:max-w-none w-full sm:w-[424px] relative">
           <div className="h-72 sm:h-[352px] relative">
             <Image
-              className="w-full h-full object-cover"
               src={urlFor(ownerInfo.image).url()}
               alt=""
               fill={true}
               sizes="(max-width: 1024px) 100vw, 50vw"
-              loading="eager"
+              loading="lazy"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="h-[95%] w-[95%] border border-white transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2"></div>
