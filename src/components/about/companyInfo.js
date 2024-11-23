@@ -15,7 +15,7 @@ export default function CompanyInfo({ companyInfo }) {
             alt=""
             fill={true}
             sizes="100vw"
-            loading="eager"
+            priority
             className="w-full h-full object-cover"
           />
         </div>

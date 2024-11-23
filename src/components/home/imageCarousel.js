@@ -43,7 +43,6 @@ export default function ImageCarousel({ imageCarousel }) {
           fill={true}
           sizes="100vw"
           priority={index == images.length / 2}
-          loading={index == images.length / 2 ? "eager" : "lazy"}
           style={{
             left: `${(index - displacement - images.length / 2) * 100}%`,
           }}
@@ -57,16 +56,9 @@ export default function ImageCarousel({ imageCarousel }) {
             alt=""
             width={350}
             height={397}
-            loading="lazy"
             className="block w-1/2 sm:w-32 h-auto mx-auto mb-5 sm:mb-9 pt-0 sm:pt-14"
           />
-          <Image
-            src="/GG-Color-Design.png"
-            alt=""
-            width={750}
-            height={237}
-            loading="lazy"
-          />
+          <Image src="/GG-Color-Design.png" alt="" width={750} height={237} />
         </div>
       </div>
       <button
@@ -74,26 +66,14 @@ export default function ImageCarousel({ imageCarousel }) {
         disabled={isDisabled}
         className="w-11 h-11 cursor-pointer transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-11"
       >
-        <Image
-          src="/Slider-Left-Arrow.png"
-          alt=""
-          width={92}
-          height={92}
-          loading="lazy"
-        />
+        <Image src="/Slider-Left-Arrow.png" alt="" width={92} height={92} />
       </button>
       <button
         onClick={handleNext}
         disabled={isDisabled}
         className="w-11 h-11 cursor-pointer transform translate-x-1/2 -translate-y-1/2 absolute top-1/2 right-11"
       >
-        <Image
-          src="/Slider-Right-Arrow.png"
-          alt=""
-          width={92}
-          height={92}
-          loading="lazy"
-        />
+        <Image src="/Slider-Right-Arrow.png" alt="" width={92} height={92} />
       </button>
     </div>
   );

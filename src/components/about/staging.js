@@ -44,7 +44,6 @@ export default function Staging({ staging }) {
                     alt=""
                     fill={true}
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -69,7 +68,6 @@ export default function Staging({ staging }) {
                     alt=""
                     fill={true}
                     sizes="(max-width: 1024px) 100vw, 50vw"
-                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>

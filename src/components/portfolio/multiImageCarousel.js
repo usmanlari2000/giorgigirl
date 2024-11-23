@@ -75,7 +75,6 @@ export default function MultiImageCarousel({ multiImageCarousel }) {
                         alt=""
                         fill={true}
                         sizes="100vw"
-                        loading="lazy"
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -92,7 +91,6 @@ export default function MultiImageCarousel({ multiImageCarousel }) {
                           alt=""
                           fill={true}
                           sizes="(max-width: 1024px) 100vw, 50vw"
-                          loading="lazy"
                           className="w-full h-full object-cover"
                         />
                       </div>
@@ -108,7 +106,6 @@ export default function MultiImageCarousel({ multiImageCarousel }) {
                           alt=""
                           fill={true}
                           sizes="(max-width: 1024px) 100vw, 50vw"
-                          loading="lazy"
                           className="w-full h-full object-cover"
                         />
                       </div>
@@ -128,7 +125,6 @@ export default function MultiImageCarousel({ multiImageCarousel }) {
                           alt=""
                           fill={true}
                           sizes="(max-width: 1024px) 100vw, 50vw"
-                          loading="lazy"
                           className="w-full h-full object-cover"
                         />
                       </div>
@@ -144,7 +140,6 @@ export default function MultiImageCarousel({ multiImageCarousel }) {
                           alt=""
                           fill={true}
                           sizes="(max-width: 1024px) 100vw, 50vw"
-                          loading="lazy"
                           className="w-full h-full object-cover"
                         />
                       </div>
@@ -161,7 +156,6 @@ export default function MultiImageCarousel({ multiImageCarousel }) {
                         alt=""
                         fill={true}
                         sizes="100vw"
-                        loading="lazy"
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -180,7 +174,6 @@ export default function MultiImageCarousel({ multiImageCarousel }) {
               alt=""
               width={76}
               height={19}
-              loading="eager"
               className="w-auto h-5"
             />
           </button>
@@ -191,7 +184,6 @@ export default function MultiImageCarousel({ multiImageCarousel }) {
               alt=""
               width={74}
               height={19}
-              loading="eager"
               className="w-auto h-5"
             />
           </button>

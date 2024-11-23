@@ -46,7 +46,6 @@ export default function TestimonialCarousel() {
         alt=""
         fill={true}
         sizes="100vw"
-        loading="lazy"
         className="w-full h-full object-cover"
       />
       <div className="w-full h-full bg-[#4e4e4e] bg-opacity-80 absolute top-0 left-0"></div>
@@ -89,7 +88,6 @@ export default function TestimonialCarousel() {
               alt=""
               width={18}
               height={35}
-              loading="lazy"
             />
           </button>
           <button
@@ -102,7 +100,6 @@ export default function TestimonialCarousel() {
               alt=""
               width={17}
               height={35}
-              loading="lazy"
             />
           </button>
         </div>
