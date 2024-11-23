@@ -121,6 +121,7 @@ export default function BeforeAndAfterImages({ beforeAndAfterImages }) {
             fill={true}
             sizes="(max-width: 1024px) 100vw, 50vw"
             priority
+            loading="eager"
             className="w-full h-full object-cover"
           />
           <div className="w-full h-full bg-white opacity-80 absolute top-0 left-0"></div>
@@ -152,6 +153,7 @@ export default function BeforeAndAfterImages({ beforeAndAfterImages }) {
                 fill={true}
                 sizes="100vw"
                 priority={index == imagePairs.length / 2}
+                loading={index == imagePairs.length / 2 ? "eager" : "lazy"}
                 className="w-full h-full object-cover select-none"
               />
               <div className="absolute bottom-4 right-4 text-white text-xl sm:text-2xl uppercase select-none">
@@ -171,6 +173,7 @@ export default function BeforeAndAfterImages({ beforeAndAfterImages }) {
                   fill={true}
                   sizes="100vw"
                   priority={index == imagePairs.length / 2}
+                  loading={index == imagePairs.length / 2 ? "eager" : "lazy"}
                   className="w-full h-full object-cover select-none"
                 />
                 <div className="absolute bottom-4 left-4 text-white text-xl sm:text-2xl uppercase select-none">

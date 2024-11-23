@@ -43,6 +43,7 @@ export default function ImageCarousel({ imageCarousel }) {
           fill={true}
           sizes="100vw"
           priority={index == images.length / 2}
+          loading={index == images.length / 2 ? "eager" : "lazy"}
           style={{
             left: `${(index - displacement - images.length / 2) * 100}%`,
           }}
