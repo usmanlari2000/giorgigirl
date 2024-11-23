@@ -57,7 +57,7 @@ export default function ImageCarousel({ imageCarousel }) {
             alt=""
             width={350}
             height={397}
-            loading="eager"
+            loading="lazy"
             className="block w-1/2 sm:w-32 h-auto mx-auto mb-5 sm:mb-9 pt-0 sm:pt-14"
           />
           <Image
@@ -65,7 +65,7 @@ export default function ImageCarousel({ imageCarousel }) {
             alt=""
             width={750}
             height={237}
-            loading="eager"
+            loading="lazy"
           />
         </div>
       </div>
@@ -79,7 +79,7 @@ export default function ImageCarousel({ imageCarousel }) {
           alt=""
           width={92}
           height={92}
-          loading="eager"
+          loading="lazy"
         />
       </button>
       <button
@@ -92,7 +92,7 @@ export default function ImageCarousel({ imageCarousel }) {
           alt=""
           width={92}
           height={92}
-          loading="eager"
+          loading="lazy"
         />
       </button>
     </div>

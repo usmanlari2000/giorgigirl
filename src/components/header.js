@@ -23,7 +23,7 @@ export default function Header() {
               alt=""
               width={350}
               height={397}
-              loading="eager"
+              loading="lazy"
               className="h-[72px] w-auto"
             />
           </Link>
